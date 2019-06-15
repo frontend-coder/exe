@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("svg.svg");
     background-repeat: no-repeat;
-    background-size: 58.5918em 113.7em;
+    background-size: 4.2em 13.6em;
 }
 
 .no-svg .ic:before {
@@ -17,19 +17,37 @@
 
 
 
-  .ic.i-sp-svg-file-format-variant:before {
+  .ic.i-sp-badge:before {
       background-position: 0em 0em;
-      width: 55.0801em;
-      height: 55.0801em;
+      width: 4.2em;
+      height: 4em;
   }
 
 
 
 
-  .ic.i-sp-svg-open-file-format:before {
-      background-position: 0em -55.1em;
-      width: 58.5918em;
-      height: 58.5918em;
+  .ic.i-sp-leaf:before {
+      background-position: 0em -4em;
+      width: 2.9em;
+      height: 4em;
+  }
+
+
+
+
+  .ic.i-sp-photo-camera:before {
+      background-position: 0em -8em;
+      width: 2.2em;
+      height: 1.6em;
+  }
+
+
+
+
+  .ic.i-sp-settings-work-tool:before {
+      background-position: 0em -9.6em;
+      width: 4.1em;
+      height: 4em;
   }
 
 

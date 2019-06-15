@@ -1,30 +1,24 @@
-
-.header_fon {
-	background: url('../img/bg-man.jpg');
-	min-height: 940px;
-	background-size: cover;
-	background-position: center center;
-
+@import "var";
+.container {
+	position: relative;
 }
-
-header {
-text-align: center;
-color:#fff;
+.header_top {
+	border-bottom: 4px solid $acsent_color;
+	background-color: $main_color;
 }
-
-
 
 .header_top_line {
 	padding: 50px 0;
 	display: flex;
 	justify-content: space-between;
-	border-bottom: 1px solid $acsent_color;
-
+	align-items: center;
 }
+
 .header_top_logo {
 	padding: 0;
 	margin: 0;
 }
+
 .header_top_logo img {
 	display: inline-block;
 	width: 100%;
@@ -39,24 +33,211 @@ color:#fff;
 }
 
 .header_top_menu ul {
-display: flex;
-list-style: none;
+	display: flex;
+	list-style: none;
 }
+
 .header_top_menu ul li a {
-@include font-size(12px);
-line-height: 1.67;
-text-decoration: none;
-  font-family: "Raleway";
-  color: #text_color;
-  text-transform: uppercase;
-  display: inline-block;
-	}
-.header_top_menu ul li a:before {
-content:"";
-width: 8px;
-height: 2px;
-background-color: $acsent_color;
+	@include font-size(12px);
+	line-height: 1.67;
+	text-decoration: none;
+	font-family: "RalewayRegular", sans-serif;
+	color: $text_color;
+	padding:10px 20px;
+	text-transform: uppercase;
+	display: inline-block;
+	@include trans;
 }
+
+.header_top_menu ul li a:before {
+	content:'';
+	width: 8px;
+	height: 2px;
+	background-color: $acsent_color;
+	display: block;
+	margin-bottom: 2px;
+	opacity: 0;
+	@include trans;
+}
+
+.header_top_menu ul li.active a {
+	color: $acsent_color;
+}
+
+.header_top_menu ul li a:hover:before {
+	opacity: 1;
+}
+
+.header_top_menu ul li a:hover {
+	color: $acsent_color;
+}
+
+.header_fon {
+	padding: 0;
+	margin: 0;
+	background-size: cover;
+	background-position: center right;
+	background-repeat: no-repeat;
+}
+
+.header_content_wrap {
+	min-height: 770px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.header_content {
+	width: 52%;
+}
+
+.header_content_title {
+	@include font-size(80px);
+	color:#ffffff;
+	margin-bottom: 20px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+
+
+
+.header_content_title span {
+	display: block;
+	@include font-size(43px);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.86;
+}
+
+.header_content_descr {
+	@include font-size(18px);
+	color:#555555;
+	margin-bottom: 40px;
+	color: rgb(85, 85, 85);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.333;
+}
+
+.header_button {
+	list-style:none;
+	display: flex;
+}
+
+.header_button li {
+	margin-right: 30px;
+}
+
+.header_button li:last-child {
+	margin-right: 0;
+}
+
+.header_button li a {
+	display: inline-block;
+	border-radius: 5px;
+	background-color: rgba(229, 73, 58, 0);
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(255, 255, 255);
+	padding: 20px 30px;
+	color:rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-decoration: none;
+	@include trans;
+}
+
+.header_button li a:hover {
+	background-color:$acsent_color;
+	border-color: $acsent_color;
+}
+
+.block {
+ padding: 75px 0;
+}
+
+
+.block_features_fon {
+  background-color:$main_color;
+ }
+ .features_wrap {
+display: flex;
+justify-content: space-between;
+ }
+
+.features_items {
+width: (100% / 4) - 2%;
+@include trans;
+cursor: pointer;
+}
+
+.features_title {
+@include font-size(18px);
+  color: rgb(99, 99, 99);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.111;
+  margin-bottom: 15px;
+}
+.features_icon {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border:2px solid $text_color;
+margin:0 auto 30px;
+}
+
+.features_icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.features_text {
+@include font-size(14px);
+  color: $text_color;
+  line-height: 1.429;
+	@include trans;
+}
+.features_text:after {
+	content:'';
+	width: 72px;
+	height: 2px;
+	background-color: $acsent_color;
+	display: block;
+	margin-top: 30px;
+	// opacity: 0;
+	@include trans;
+}
+
+
+
+.features_items:hover .features_title {
+color:$acsent_color;
+}
+
+.features_items:hover .features_text {
+color:#ffffff;
+}
+
+.features_items:hover .features_icon {
+border-color:$acsent_color;
+}
+
+
+.features_items:hover .features_icon svg {
+fill:$acsent_color;
+color:$acsent_color;
+}
+.advatages_title {
+@include visually-hidden;
+}
+
+
+
+
+
+
 
 
 

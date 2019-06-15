@@ -14,8 +14,8 @@ $(document).ready(function () {
 	$('body, .top-menu ul li a').click(function () {
 		$('.hidden-mnu').hide("slow");
 	});
-	console.info('kojkj');
-	//Ajax push mesege http://api.jquery.com/jquery.ajax/
+
+		//Ajax push mesege http://api.jquery.com/jquery.ajax/
 	$("form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({type: "POST",
