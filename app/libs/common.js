@@ -16,6 +16,28 @@ $(document).ready(function () {
 	});
 
 
+$('#clients_slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  adaptiveHeight: true,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+
+
+
+
+
+
+
+
+
+
+
+
 		//Ajax push mesege http://api.jquery.com/jquery.ajax/
 	//Ajax push mesege http://api.jquery.com/jquery.ajax/
 	$("form").submit(function() { //Change
