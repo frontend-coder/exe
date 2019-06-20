@@ -1,3 +1,7 @@
+footer {
+	background-color: #111111;
+	padding: 26px 0;
+}
 
 .footer_wrap {
 	display: -webkit-flex;
@@ -5,24 +9,6 @@
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-
-	justify-content: space-between;
-
-
-}
-
-.footer_items {
-	width: 30%;
-	background-color: yellow;
-
-}
-
-.heagerclass {
-
-	background-color: red;
-	padding: 50px 0;
-}
-
-.heagerclass_title {
-	color:#fff;
+align-content: center;
+justify-content: center;
 }
