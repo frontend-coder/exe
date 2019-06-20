@@ -1,8 +1,7 @@
 @import "var";
-
 // эти свойства по default
 *::-webkit-input-placeholder {
-color:#202020;
+color: $placeholdercolortext;
 opacity: 1;
 }
 

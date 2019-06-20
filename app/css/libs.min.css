@@ -3983,29 +3983,29 @@ img.mfp-img {
 
 @charset "UTF-8";
 *::-webkit-input-placeholder {
-  color: #202020;
+  color: white;
   opacity: 1;
 }
 
 *::-ms-input-placeholder {
-  color: #202020;
+  color: white;
   opacity: 1;
 }
 
 ::-webkit-input-placeholder {
-  color: #202020;
+  color: white;
 }
 
 :-ms-input-placeholder {
-  color: #202020;
+  color: white;
 }
 
 ::-ms-input-placeholder {
-  color: #202020;
+  color: white;
 }
 
 ::placeholder {
-  color: #202020;
+  color: white;
 }
 
 ::-moz-selection {
@@ -4016,20 +4016,6 @@ img.mfp-img {
 ::selection {
   background-color: orange;
   color: #fff;
-}
-
-/* font-family: "RobotoRegular"; */
-@font-face {
-  font-family: "RobotoRegular";
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
-}
-
-/* font-family: "OpenSansRegular"; */
-@font-face {
-  font-family: "OpenSansRegular";
-  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 400;
 }
 
 @font-face {
@@ -4056,7 +4042,7 @@ body {
   opacity: 1;
   position: relative;
   line-height: 1.42;
-  font-family: "RobotoRegular", sans-serif;
+  font-family: "RalewayRegular", sans-serif;
   overflow-x: hidden;
   color: #000000;
 }
@@ -5017,6 +5003,114 @@ body input:required:valid, body textarea:required:valid {
 
 .slick-next {
   right: -50px;
+}
+
+.form_fon {
+  background-color: #8dc63f;
+  padding: 75px 0 55px 0;
+}
+
+.form_title {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.933;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.form_title:before {
+  content: '';
+  width: 70px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.form_wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form_on_form {
+  width: 46%;
+}
+
+.form_on_map {
+  width: 50%;
+}
+
+.forms-call {
+  width: 100%;
+  padding: 0;
+  border: 0;
+}
+
+.forms-call label {
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+}
+
+.forms-call input {
+  width: 100%;
+  height: 50px;
+  font-weight: normal;
+  line-height: 50px;
+  text-indent: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #202020;
+  border: 0;
+  margin-bottom: 20px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.forms-call textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 1.6;
+  text-indent: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #202020;
+  border: 0;
+  resize: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.footer_call .block_mini_link {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #e5493a;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.footer_call .block_mini_link:hover {
+  background-color: #e54738;
 }
 
 .heagerclass {
