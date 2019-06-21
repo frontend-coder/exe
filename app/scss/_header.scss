@@ -654,6 +654,64 @@
 
 
 
+// оформляю блок скилов
+
+.progress {
+
+}
+.skills_progress {
+margin-bottom: 30px;
+}
+.progress_name {
+font-size: 14px; margin-bottom: 20px;
+color:#fff;
+font-weight: 700;
+text-transform: uppercase;
+line-height: 1.429;
+}
+.progree_element {
+border-radius: 3px;
+border:1px solid rgba(255, 255, 255, .25);
+padding: 2px;
+}
+.progree_line {
+background-color: #fff;
+height: 4px;
+position: relative;
+width: 0;
+}
+.progree_tooltip {
+position: absolute;
+right: -15px;
+top:-32px;
+width: 31px;
+font-size: 11px;
+line-height: (18 / 11);
+text-align: center;
+background-color: $main_color;
+color:#fff;
+border-radius: 3px;
+display: none;
+}
+.progree_tooltip:before {
+content: '';
+border: 4px solid transparent;
+border-top: 4px solid $main_color;
+position: absolute;
+bottom:-7px;
+left:50%;
+transform:translateX(-50%);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -152,15 +152,15 @@ gulp.task('rsync', function() {
 });
 
 // npm install --save-dev gulp-ftp vinyl-ftp
-//FTP: ftp://vh146.timeweb.ru
-//Логин: cc63120
-//Пароль: j7X4Y36Od5Zm
+//FTP: ftp://vh201.timeweb.ru
+//Логин: cb96064
+//Пароль: ROZgrQQZTf3h
 
 gulp.task( 'ftp', function () {
   var conn = vinyFTP.create( {
-   host:     'vh116.timeweb.ru',
-   user:     'cx76534',
-   password: 'PowO7q2Qcv2Y',
+   host:     'vh201.timeweb.ru',
+   user:     'cb96064',
+   password: 'ROZgrQQZTf3h',
    parallel: 10,
    log:      gulpUtil.log
  } );
@@ -171,13 +171,13 @@ gulp.task( 'ftp', function () {
         // 'js/**',
         // 'fonts/**',
         // 'index.html'
-        'dist/**'
+        'app/**'
         ];
 
     // using base = '.' will transfer everything to /public_html correctly
     // turn off buffering in gulp.src for best performance
 
-    return gulp.src( globs, { base: './dist/', buffer: false } )
+    return gulp.src( globs, { base: './app/', buffer: false } )
         .pipe( conn.newerOrDifferentSize( '/public_html' ) )// only upload newer files
         .pipe( conn.dest( '/public_html' ) );
 
@@ -199,18 +199,18 @@ function movefile() {
      }
 
      function movefilother() {
-      return gulp.src('app/*.{php,access}')
+      return gulp.src('app/mail.php')
       .pipe(gulp.dest('dist'));
     }
 
     function movejs() {
       return gulp.src('app/js/scripts.min.js')
-    .pipe(uglify()) // Mifify js (opt.)
+ //   .pipe(uglify()) // Mifify js (opt.)
     .pipe(gulp.dest('dist/js'))
     .pipe(filesize()).on('error', gulpUtil.log);
   }
   function movecss() {
-    return gulp.src('app/css/*')
+    return gulp.src('app/css/*.css')
    .pipe(cleancss( {level: { 2: { specialComments: 0 } } })) // Opt., comment out when debugging
    .pipe(gulp.dest('dist/css'))
    .pipe(filesize()).on('error', gulpUtil.log);

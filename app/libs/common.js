@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	"use strict";
 	// 	$("body").niceScroll({
 	// horizrailenabled:false
 	// });
@@ -28,7 +29,25 @@ $('#clients_slider').slick({
 });
 
 
+  function moveProgressBar(node, nodeLine, tooltip, animationLength = 1500) {
+    const progressElement = $(node);
+    progressElement.each(function (value, item) {
+      $(item).find(nodeLine).animate({
+        width: item.dataset.progressPercent+'%'
+      }, animationLength);
+      $(item).find(tooltip).show(animationLength);
+    });
+  }
+  let animate = true;
 
+  $(window).scroll(function () {
+    if($('.skills_fon').offset().top <= $(window).scrollTop() + 550) {
+      if(animate) {
+        moveProgressBar('.progree_element', '.progree_line', '.progree_tooltip');
+      }
+      animate = false;
+    }
+  });
 
 
 
