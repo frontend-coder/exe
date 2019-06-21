@@ -5022,6 +5022,41 @@ body input:required:valid, body textarea:required:valid {
   display: none;
 }
 
+.mfp-arrow-right:after,
+.mfp-arrow-right:before,
+.mfp-arrow-left:after,
+.mfp-arrow-left:before {
+  display: none;
+}
+
+.mfp-arrow-left {
+  background: url(../img/slider/arrow-sprite.png) no-repeat top left !important;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 38px;
+}
+
+.mfp-arrow-right {
+  background: url(../img/slider/arrow-sprite.png) no-repeat bottom left !important;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 38px;
+}
+
+.mfp-arrow-left:hover {
+  background: url(../img/slider/arrow-sprite.png) no-repeat top right !important;
+  width: 30px;
+  height: 30px;
+}
+
+.mfp-arrow-right:hover {
+  background: url(../img/slider/arrow-sprite.png) no-repeat bottom right !important;
+  width: 30px;
+  height: 30px;
+}
+
 #clients_slider {
   width: 90%;
   margin: 0 auto;

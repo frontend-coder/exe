@@ -51,7 +51,35 @@ $('#clients_slider').slick({
 
 
 
+let groups = {};
+$('.galleryItem').each(function() {
+  let id = parseInt($(this).attr('data-group'), 10);
+  if(!groups[id]) {
+    groups[id] = [];
+ }
+  groups[id].push( this );
+});
+$.each(groups, function() {
+  $(this).magnificPopup({
+      type: 'image',
+      tClose: 'Закрыть (Esc)',
+         removalDelay: 400,
+        fixedBgPos:false,
+fixedContentPos:false,
+      closeOnContentClick: true,
+      closeBtnInside: false,
+      gallery: { enabled:true,
+      	tNext:'Следующий слайд',
+      	tPrev:'Предыдущий слайд',
+      	tCounter: '%curr% из %total%',
 
+
+
+
+
+       }
+  })
+});
 
 
 
