@@ -171,13 +171,13 @@ gulp.task( 'ftp', function () {
         // 'js/**',
         // 'fonts/**',
         // 'index.html'
-        'app/**'
+        'dist/**'
         ];
 
     // using base = '.' will transfer everything to /public_html correctly
     // turn off buffering in gulp.src for best performance
 
-    return gulp.src( globs, { base: './app/', buffer: false } )
+    return gulp.src( globs, { base: './dist/', buffer: false } )
         .pipe( conn.newerOrDifferentSize( '/public_html' ) )// only upload newer files
         .pipe( conn.dest( '/public_html' ) );
 
